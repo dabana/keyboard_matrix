@@ -42,48 +42,35 @@
                     /*
                       Keycodes from /usr/include/linux/input-event-codes.h
                       converted to hex using printf '%02x\n'
+									// col4 row3 KEY_KPASTERISK
                     */
 
                     linux,keymap = <
-                                    // col0 row0 KEY_LEFT
-                                    0x00000069
-                                    // col0 row1 KEY_KP0
-                                    0x01000052
-                                    // col0 row2 KEY_RIGHT
-                                    0x0200006a
-                                    // col0 row3 KEY_KPENTER
-                                    0x03000060
-									// col1 row0 KEY_KP7
-                                    0x00010047
-                                    // col1 row1 KEY_KP8
-                                    0x01010048
-                                    // col1 row2 KEY_KP9
-                                    0x02010049
-                                    // col1 row3 KEY_ESC
-                                    0x03010001
-                                    // col2 row0 KEY_KP4
-                                    0x0002004b
-                                    // col2 row1 KEY_KP5
-                                    0x0102004c
-                                    // col2 row2 KEY_KP6
-                                    0x0202004d
-                                    // col2 row3 KEY_DOWN
-                                    0x0302006c
-                                    // col3 row0 KEY_KP1
-                                    0x0003004f
-                                    // col3 row1 KEY_KP2
-                                    0x01030050
-                                    // col3 row2 KEY_KP3
-                                    0x02030051
-                                    // col3 row3 KEY_UP
-                                    0x03030067
-                                    // col4 row0 KEY_F1
-                                    0x0004003b
-                                    // col4 row1 KEY_F2
-                                    0x0104003c
-                                    // col4 row2 KEY_KPSLASH there is no KP_#
-                                    0x02040062
-                                    // col4 row3 KEY_KPASTERISK
+                                    // col0 row0 KEY_RESERVED
+									0x00000000
+                                    // col0 row1 KEY_Q
+									0x00000010
+                                    // col0 row2 KEY_RESERVED
+									0x00000000
+                                    // col0 row3 KEY_RESERVED
+									0x00000000
+                                    // col0 row4 KEY_RESERVED
+									0x00000000
+                                    // col0 row5 KEY_RESERVED
+									0x00000000
+									// col0 row6 KEY_RESERVED
+									0x00000000
+                                    // col0 row7 KEY_RESERVED
+									0x00000000
+                                    // col0 row8 KEY_RESERVED
+									0x00000000
+                                    // col0 row9 KEY_RESERVED
+									0x00000000
+                                    // col0 row10 KEY_RESERVED
+									0x00000000
+                                    // col0 row11 KEY_RESERVED
+									0x00000000
+                                    // col0 row12 KEY_RESERVED
                                     0x03040037>;
 
                  };
