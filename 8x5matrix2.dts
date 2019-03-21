@@ -1,0 +1,80 @@
+/dts-v1/;
+    /plugin/;
+    / {
+           compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+           fragment@0 {
+              target-path = "/";
+              __overlay__ {
+                 keypad: MATRIX8x5{
+                    compatible = "gpio-matrix-keypad";
+                    debounce-delay-ms = <10>;
+                    col-scan-delay-us = <10>;
+                    wakeup-source = <1>;
+                    drive-inactive-cols = <1>;
+                    /* 
+		       try to use GPIO only lines
+                       to keep SPI and I2C usable
+                    */
+                    col-gpios = <&gpio 23 0    // 8
+                                 &gpio 18 0    // 9
+                                 &gpio 15 0    // 10
+                                 &gpio 14 0    // 11
+								 &gpio 4 0>;    // 12  
+                    row-gpios = <&gpio 21 0    // 0
+                                 &gpio 20 0      // 1
+                                 &gpio 16 0    // 2
+                                 &gpio 12 0     // 3
+								 &gpio 7 0    // 4
+                                 &gpio 8 0    // 5
+                                 &gpio 25 0    // 6
+                                 &gpio 24 0>;  //7
+                    /*
+                      Keycodes from /usr/include/linux/input-event-codes.h
+                      converted to hex using printf '%02x\n'
+                    */
+                    linux,keymap = <			0x00000002
+								0x00010003
+								0x00020004
+								0x00030005
+								0x00040006
+								0x01000010
+								0x01010011
+								0x01020012
+								0x01030013
+								0x01040014
+								0x0200001e
+								0x0201001f
+								0x02020020
+								0x02030021
+								0x02040022
+								0x0300000b
+								0x0301000a
+								0x03020009
+								0x03030008
+								0x03040007
+								0x04000019
+								0x04010018
+								0x04020017
+								0x04030016
+								0x04040015
+								0x0500002a
+								0x0501002c
+								0x0502002d
+								0x0503002e
+								0x0504002f
+								0x0600001c
+								0x06010026
+								0x06020025
+								0x06030024
+								0x06040023
+								0x07000039
+								0x0701001d
+								0x07020032
+								0x07030031
+								0x07040030>;
+
+                 };
+              };
+           };
+      };
