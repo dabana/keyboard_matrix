@@ -1,0 +1,86 @@
+    /dts-v1/;
+    /plugin/;
+    / {
+           compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+           fragment@0 {
+              target-path = "/";
+              __overlay__ {
+                 keypad: MATRIX8x16 {
+                    compatible = "gpio-matrix-keypad";
+                    debounce-delay-ms = <10>;
+                    col-scan-delay-us = <10>;
+                    /* 
+		       try to use GPIO only lines
+                       to keep SPI and I2C usable
+                    */
+                    row-gpios = <&gpio 21 0    // 0
+                                 &gpio 20 0      // 1
+                                 &gpio 16 0    // 2
+                                 &gpio 12 0     // 3
+								 &gpio 7 0    // 4
+                                 &gpio 8 0    // 5
+                                 &gpio 25 0    // 6
+                                 &gpio 24 0>;   // 7
+
+                    col-gpios = <&gpio 23 0    // 8
+                                 &gpio 18 0    // 9
+                                 &gpio 15 0    // 10
+                                 &gpio 14 0    // 11
+								 &gpio 4 0    // 12
+                                 &gpio 17 0    // 13
+                                 &gpio 27 0    // 14
+                                 &gpio 22 0    // 15
+                                 &gpio 10 0    // 16
+                                 &gpio 9 0    // 17
+								 &gpio 11 0    // 18
+                                 &gpio 5 0    // 19
+                                 &gpio 19 0    // 20
+                                 &gpio 13 0    // 21
+                                 &gpio 6 0    // 22
+                                 &gpio 26 0>;  // 23
+                    /*
+                      Keycodes from /usr/include/linux/input-event-codes.h
+                      converted to hex using printf '%02x\n'
+									// col4 row3 KEY_KPASTERISK
+                    */
+
+                    linux,keymap = <
+                                    // col0 row0 KEY_Q
+									0x00000000
+                                    // col0 row1 KEY_Q
+									0x01000001
+                                    // col0 row2 KEY_Q
+									0x02000002
+                                    // col0 row3 KEY_Q
+									0x03000003
+                                    // col0 row4 KEY_Q
+									0x04000004
+                                    // col0 row5 KEY_Q
+									0x05000005
+									// col0 row6 KEY_Q
+									0x06000006
+                                    // col0 row7 KEY_Q
+									0x07000007
+                                    // col0 row8 KEY_Q
+									0x08000008
+                                    // col0 row9 KEY_Q
+									0x09000009
+                                    // col0 row10 KEY_Q
+									0x0a00000a
+                                    // col0 row11 KEY_Q
+									0x0b00000b
+                                    // col0 row8 KEY_Q
+									0x0c00000c
+                                    // col0 row9 KEY_Q
+									0x0d00000d
+                                    // col0 row10 KEY_Q
+									0x0e00000e
+                                    // col0 row11 KEY_Q
+									0x0f00000f
+                                    // col0 row0 KEY_Q
+									0x00010010>;
+                 };
+              };
+           };
+      };
