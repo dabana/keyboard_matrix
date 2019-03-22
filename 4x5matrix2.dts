@@ -6,7 +6,7 @@
            fragment@0 {
               target-path = "/";
               __overlay__ {
-                 keypad: MATRIX8x5{
+                 keypad: MATRIX4x5{
                     compatible = "gpio-matrix-keypad";
                     debounce-delay-ms = <10>;
                     col-scan-delay-us = <10>;
