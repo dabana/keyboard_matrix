@@ -70,47 +70,7 @@
                                     // col0 row3 KEY_Q
 									0x03030010
                                     // col0 row4 KEY_Q
-									0x04030010                                    
-                                    // col0 row0 KEY_Q
-									0x00040010
-                                    // col0 row1 KEY_Q
-									0x01040010
-                                    // col0 row2 KEY_Q
-									0x02040010
-                                    // col0 row3 KEY_Q
-									0x03040010
-                                    // col0 row4 KEY_Q									0x04040010
-                                    0x04040010
-                                    // col0 row0 KEY_Q
-									0x00050010
-                                    // col0 row1 KEY_Q
-									0x01050010
-                                    // col0 row2 KEY_Q
-									0x02050010
-                                    // col0 row3 KEY_Q
-									0x03050010
-                                    // col0 row4 KEY_Q
-									0x04050010
-                                    // col0 row0 KEY_Q
-									0x00060010
-                                    // col0 row1 KEY_Q
-									0x01060010
-                                    // col0 row2 KEY_Q
-									0x02060010
-                                    // col0 row3 KEY_Q
-									0x03060010
-                                    // col0 row4 KEY_Q
-									0x04060010
-                                    // col0 row0 KEY_Q
-									0x00070010
-                                    // col0 row1 KEY_Q
-									0x01070010
-                                    // col0 row2 KEY_Q
-									0x02070010
-                                    // col0 row3 KEY_Q
-									0x03070010
-                                    // col0 row4 KEY_Q
-									0x04070010>;
+									0x04030010>;
 
                  };
               };
