@@ -10,7 +10,8 @@
                     compatible = "gpio-matrix-keypad";
                     debounce-delay-ms = <10>;
                     col-scan-delay-us = <10>;
-                    /* 
+                    drive-inactive-cols = <1>;
+			/* 
 		       try to use GPIO only lines
                        to keep SPI and I2C usable
                     */
