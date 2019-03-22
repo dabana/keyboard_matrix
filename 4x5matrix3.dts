@@ -35,41 +35,41 @@
                                     // col0 row1 KEY_LEFT
                                     0x01000069
                                     // col0 row2 KEY_RIGHT
-                                    0x0200006a
+                                    0x02000069
                                     // col0 row3 KEY_KPENTER
-                                    0x03000060
+                                    0x03000069
 				    // col1 row0 KEY_KP7
-                                    0x00010047
+                                    0x00010069
                                     // col1 row1 KEY_KP8
-                                    0x01010048
+                                    0x01010069
                                     // col1 row2 KEY_KP9
-                                    0x02010049
+                                    0x02010069
                                     // col1 row3 KEY_ESC
-                                    0x03010001
+                                    0x03010069
                                     // col2 row0 KEY_KP4
-                                    0x0002004b
+                                    0x00020069
                                     // col2 row1 KEY_KP5
-                                    0x0102004c
+                                    0x01020069
                                     // col2 row2 KEY_KP6
-                                    0x0202004d
+                                    0x02020069
                                     // col2 row3 KEY_DOWN
-                                    0x0302006c
+                                    0x03020069
                                     // col3 row0 KEY_KP1
-                                    0x0003004f
+                                    0x00030069
                                     // col3 row1 KEY_KP2
-                                    0x01030050
+                                    0x01030069
                                     // col3 row2 KEY_KP3
-                                    0x02030051
+                                    0x02030069
                                     // col3 row3 KEY_UP
-                                    0x03030067
+                                    0x03030069
                                     // col4 row0 KEY_F1
-                                    0x0004003b
+                                    0x00040069
                                     // col4 row1 KEY_F2
-                                    0x0104003c
+                                    0x01040069
                                     // col4 row2 KEY_KPSLASH there is no KP_#
-                                    0x02040062
+                                    0x02040069
                                     // col4 row3 KEY_KPASTERISK
-                                    0x03040037>;
+                                    0x03040069>;
 
                  };
               };
