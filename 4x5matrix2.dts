@@ -1,4 +1,4 @@
-    /dts-v1/;
+/dts-v1/;
     /plugin/;
     / {
            compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
@@ -6,10 +6,12 @@
            fragment@0 {
               target-path = "/";
               __overlay__ {
-                 keypad: MATRIX4x5 {
+                 keypad: MATRIX8x5{
                     compatible = "gpio-matrix-keypad";
                     debounce-delay-ms = <10>;
                     col-scan-delay-us = <10>;
+                    wakeup-source = <1>;
+                    drive-inactive-cols = <1>;
                     /* 
 		       try to use GPIO only lines
                        to keep SPI and I2C usable
@@ -17,7 +19,7 @@
                     row-gpios = <&gpio 21 0    // 0
                                  &gpio 20 0      // 1
                                  &gpio 16 0    // 2
-                                 &gpio 12 0>;     // 3
+                                 &gpio 12 0>;   // 3
 
                     col-gpios = <&gpio 23 0    // 8
                                  &gpio 18 0    // 9
@@ -28,48 +30,87 @@
                       Keycodes from /usr/include/linux/input-event-codes.h
                       converted to hex using printf '%02x\n'
                     */
-
                     linux,keymap = <
-                                    // col0 row0 KEY_LEFT
-                                    0x00000069
-                                    // col0 row1 KEY_KP0
-                                    0x01000052
-                                    // col0 row2 KEY_RIGHT
-                                    0x0200006a
-                                    // col0 row3 KEY_KPENTER
-                                    0x03000060
-				    // col1 row0 KEY_KP7
-                                    0x00010047
-                                    // col1 row1 KEY_KP8
-                                    0x01010048
-                                    // col1 row2 KEY_KP9
-                                    0x02010049
-                                    // col1 row3 KEY_ESC
-                                    0x03010001
-                                    // col2 row0 KEY_KP4
-                                    0x0002004b
-                                    // col2 row1 KEY_KP5
-                                    0x0102004c
-                                    // col2 row2 KEY_KP6
-                                    0x0202004d
-                                    // col2 row3 KEY_DOWN
-                                    0x0302006c
-                                    // col3 row0 KEY_KP1
-                                    0x0003004f
-                                    // col3 row1 KEY_KP2
-                                    0x01030050
-                                    // col3 row2 KEY_KP3
-                                    0x02030051
-                                    // col3 row3 KEY_UP
-                                    0x03030067
-                                    // col4 row0 KEY_F1
-                                    0x0004003b
-                                    // col4 row1 KEY_F2
-                                    0x0104003c
-                                    // col4 row2 KEY_KPSLASH there is no KP_#
-                                    0x02040062
-                                    // col4 row3 KEY_KPASTERISK
-                                    0x03040037>;
+                                    // col0 row0 KEY_Q
+									0x00000010
+                                    // col0 row1 KEY_Q
+									0x01000010
+                                    // col0 row2 KEY_Q
+									0x02000010
+                                    // col0 row3 KEY_Q
+									0x03000010
+                                    // col0 row4 KEY_Q
+									0x04000010                                    
+                                    // col0 row0 KEY_Q
+									0x00010010
+                                    // col0 row1 KEY_Q
+									0x01010010
+                                    // col0 row2 KEY_Q
+									0x02010010
+                                    // col0 row3 KEY_Q
+									0x03010010
+                                    // col0 row4 KEY_Q
+									0x04010010
+                                    // col0 row0 KEY_Q
+									0x00020010
+                                    // col0 row1 KEY_Q
+									0x01020010
+                                    // col0 row2 KEY_Q
+									0x02020010
+                                    // col0 row3 KEY_Q
+									0x03020010
+                                    // col0 row4 KEY_Q
+									0x04020010                                    
+                                    // col0 row0 KEY_Q
+									0x00030010
+                                    // col0 row1 KEY_Q
+									0x01030010
+                                    // col0 row2 KEY_Q
+									0x02030010
+                                    // col0 row3 KEY_Q
+									0x03030010
+                                    // col0 row4 KEY_Q
+									0x04030010                                    
+                                    // col0 row0 KEY_Q
+									0x00040010
+                                    // col0 row1 KEY_Q
+									0x01040010
+                                    // col0 row2 KEY_Q
+									0x02040010
+                                    // col0 row3 KEY_Q
+									0x03040010
+                                    // col0 row4 KEY_Q									0x04040010
+                                    0x04040010
+                                    // col0 row0 KEY_Q
+									0x00050010
+                                    // col0 row1 KEY_Q
+									0x01050010
+                                    // col0 row2 KEY_Q
+									0x02050010
+                                    // col0 row3 KEY_Q
+									0x03050010
+                                    // col0 row4 KEY_Q
+									0x04050010
+                                    // col0 row0 KEY_Q
+									0x00060010
+                                    // col0 row1 KEY_Q
+									0x01060010
+                                    // col0 row2 KEY_Q
+									0x02060010
+                                    // col0 row3 KEY_Q
+									0x03060010
+                                    // col0 row4 KEY_Q
+									0x04060010
+                                    // col0 row0 KEY_Q
+									0x00070010
+                                    // col0 row1 KEY_Q
+									0x01070010
+                                    // col0 row2 KEY_Q
+									0x02070010
+                                    // col0 row3 KEY_Q
+									0x03070010
+                                    // col0 row4 KEY_Q
+									0x04070010>;
 
                  };
               };
