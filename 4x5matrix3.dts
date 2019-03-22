@@ -31,45 +31,45 @@
 
                     linux,keymap = <
                                     // col0 row0 KEY_LEFT
-                                    0x00000069
+                                    0x00000010
                                     // col0 row1 KEY_LEFT
-                                    0x01000069
+                                    0x01000010
                                     // col0 row2 KEY_RIGHT
-                                    0x02000069
+                                    0x02000010
                                     // col0 row3 KEY_KPENTER
-                                    0x03000069
+                                    0x03000010
 				    // col1 row0 KEY_KP7
-                                    0x00010069
+                                    0x00010010
                                     // col1 row1 KEY_KP8
-                                    0x01010069
+                                    0x01010010
                                     // col1 row2 KEY_KP9
-                                    0x02010069
+                                    0x02010010
                                     // col1 row3 KEY_ESC
-                                    0x03010069
+                                    0x03010010
                                     // col2 row0 KEY_KP4
-                                    0x00020069
+                                    0x00020010
                                     // col2 row1 KEY_KP5
-                                    0x01020069
+                                    0x01020010
                                     // col2 row2 KEY_KP6
-                                    0x02020069
+                                    0x02020010
                                     // col2 row3 KEY_DOWN
-                                    0x03020069
+                                    0x03020010
                                     // col3 row0 KEY_KP1
-                                    0x00030069
+                                    0x00030010
                                     // col3 row1 KEY_KP2
-                                    0x01030069
+                                    0x01030010
                                     // col3 row2 KEY_KP3
-                                    0x02030069
+                                    0x02030010
                                     // col3 row3 KEY_UP
-                                    0x03030069
+                                    0x03030010
                                     // col4 row0 KEY_F1
-                                    0x00040069
+                                    0x00040010
                                     // col4 row1 KEY_F2
-                                    0x01040069
+                                    0x01040010
                                     // col4 row2 KEY_KPSLASH there is no KP_#
-                                    0x02040069
+                                    0x02040010
                                     // col4 row3 KEY_KPASTERISK
-                                    0x03040069>;
+                                    0x03040010>;
 
                  };
               };
