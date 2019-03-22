@@ -44,29 +44,7 @@
                                     // col0 row3 KEY_Q
 									0x03000010
                                     // col0 row4 KEY_Q
-									0x04000010
-                                    // col0 row5 KEY_Q
-									0x05000010
-									// col0 row6 KEY_Q
-									0x06000010
-                                    // col0 row7 KEY_Q
-									0x07000010
-                                    // col0 row8 KEY_Q
-									0x08000010
-                                    // col0 row9 KEY_Q
-									0x09000010
-                                    // col0 row10 KEY_Q
-									0x0a000010
-                                    // col0 row11 KEY_Q
-									0x0b000010
-                                    // col0 row8 KEY_Q
-									0x0c000010
-                                    // col0 row9 KEY_Q
-									0x0d000010
-                                    // col0 row10 KEY_Q
-									0x0e000010
-                                    // col0 row11 KEY_Q
-									0x0f000010
+									0x04000010                                    
                                     // col0 row0 KEY_Q
 									0x00010010
                                     // col0 row1 KEY_Q
@@ -77,28 +55,6 @@
 									0x03010010
                                     // col0 row4 KEY_Q
 									0x04010010
-                                    // col0 row5 KEY_Q
-									0x05010010
-									// col0 row6 KEY_Q
-									0x06010010
-                                    // col0 row7 KEY_Q
-									0x07010010
-                                    // col0 row8 KEY_Q
-									0x08010010
-                                    // col0 row9 KEY_Q
-									0x09010010
-                                    // col0 row10 KEY_Q
-									0x0a010010
-                                    // col0 row11 KEY_Q
-									0x0b010010
-                                    // col0 row8 KEY_Q
-									0x0c010010
-                                    // col0 row9 KEY_Q
-									0x0d010010
-                                    // col0 row10 KEY_Q
-									0x0e010010
-                                    // col0 row11 KEY_Q
-									0x0f010010
                                     // col0 row0 KEY_Q
 									0x00020010
                                     // col0 row1 KEY_Q
@@ -108,29 +64,7 @@
                                     // col0 row3 KEY_Q
 									0x03020010
                                     // col0 row4 KEY_Q
-									0x04020010
-                                    // col0 row5 KEY_Q
-									0x05020010
-									// col0 row6 KEY_Q
-									0x06020010
-                                    // col0 row7 KEY_Q
-									0x07020010
-                                    // col0 row8 KEY_Q
-									0x08020010
-                                    // col0 row9 KEY_Q
-									0x09020010
-                                    // col0 row10 KEY_Q
-									0x0a020010
-                                    // col0 row11 KEY_Q
-									0x0b020010
-                                    // col0 row8 KEY_Q
-									0x0c020010
-                                    // col0 row9 KEY_Q
-									0x0d020010
-                                    // col0 row10 KEY_Q
-									0x0e020010
-                                    // col0 row11 KEY_Q
-									0x0f020010
+									0x04020010                                    
                                     // col0 row0 KEY_Q
 									0x00030010
                                     // col0 row1 KEY_Q
@@ -140,29 +74,7 @@
                                     // col0 row3 KEY_Q
 									0x03030010
                                     // col0 row4 KEY_Q
-									0x04030010
-                                    // col0 row5 KEY_Q
-									0x05030010
-									// col0 row6 KEY_Q
-									0x06030010
-                                    // col0 row7 KEY_Q
-									0x07030010
-                                    // col0 row8 KEY_Q
-									0x08030010
-                                    // col0 row9 KEY_Q
-									0x09030010
-                                    // col0 row10 KEY_Q
-									0x0a030010
-                                    // col0 row11 KEY_Q
-									0x0b030010
-                                    // col0 row8 KEY_Q
-									0x0c030010
-                                    // col0 row9 KEY_Q
-									0x0d030010
-                                    // col0 row10 KEY_Q
-									0x0e030010
-                                    // col0 row11 KEY_Q
-									0x0f030010
+									0x04030010                                    
                                     // col0 row0 KEY_Q
 									0x00040010
                                     // col0 row1 KEY_Q
@@ -171,30 +83,38 @@
 									0x02040010
                                     // col0 row3 KEY_Q
 									0x03040010
+                                    // col0 row4 KEY_Q									0x04040010
+                                    0x04040010
+                                    // col0 row0 KEY_Q
+									0x00050010
+                                    // col0 row1 KEY_Q
+									0x01050010
+                                    // col0 row2 KEY_Q
+									0x02050010
+                                    // col0 row3 KEY_Q
+									0x03050010
                                     // col0 row4 KEY_Q
-									0x04040010
-                                    // col0 row5 KEY_Q
-									0x05040010
-									// col0 row6 KEY_Q
-									0x06040010
-                                    // col0 row7 KEY_Q
-									0x07040010
-                                    // col0 row8 KEY_Q
-									0x08040010
-                                    // col0 row9 KEY_Q
-									0x09040010
-                                    // col0 row10 KEY_Q
-									0x0a040010
-                                    // col0 row11 KEY_Q
-									0x0b040010
-                                    // col0 row8 KEY_Q
-									0x0c040010
-                                    // col0 row9 KEY_Q
-									0x0d040010
-                                    // col0 row10 KEY_Q
-									0x0e040010
-                                    // col0 row11 KEY_Q
-									0x0f040010>;
+									0x04050010
+                                    // col0 row0 KEY_Q
+									0x00060010
+                                    // col0 row1 KEY_Q
+									0x01060010
+                                    // col0 row2 KEY_Q
+									0x02060010
+                                    // col0 row3 KEY_Q
+									0x03060010
+                                    // col0 row4 KEY_Q
+									0x04060010
+                                    // col0 row0 KEY_Q
+									0x00070010
+                                    // col0 row1 KEY_Q
+									0x01070010
+                                    // col0 row2 KEY_Q
+									0x02070010
+                                    // col0 row3 KEY_Q
+									0x03070010
+                                    // col0 row4 KEY_Q
+									0x04070010>;
 
                  };
               };
