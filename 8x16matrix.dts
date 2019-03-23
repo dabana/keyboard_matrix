@@ -147,9 +147,9 @@
                                     // row3 col5 KEY_H
 									0x03050023     
                                     // row4 col5 KEY_M
-									0x04050033
+									0x04050032
                                     // row5 col5 KEY_N
-									0x05050032                                   
+									0x05050031                                   
                                     // row6 col5 KEY_6
 									0x06050007
                                     // row7 col5 KEY_7
@@ -291,7 +291,7 @@
                                     // row3 col14 KEY_RESERVED
 									0x030e0000     
                                     // row4 col14 KEY_DOT
-									0x040e0052
+									0x040e0034
                                     // row5 col14 KEY_RESERVED
 									0x050e0000                                   
                                     // row6 col14 KEY_RESERVED
