@@ -7,7 +7,7 @@
                 target = <&gpio>;
                 __overlay__ {
                         keypad_pins: keypad_pins {
-                                brcm,pins = < 2 3 21 20 16 12 7 8 25 24 23 18 15 14 4 17 27 22 10 9 11 5 19 13 6 26 >;
+                                brcm,pins = < 21 20 16 12 7 8 25 24 23 18 15 14 4 17 27 22 10 9 11 5 19 13 6 26 >;
                                 brcm,function = <0>; // input
                                 brcm,pull = <1>; // 0=off, 1=down, 2=up
                         };
@@ -40,7 +40,7 @@
                                  &gpio 18 0    // 9
                                  &gpio 15 0    // 10
                                  &gpio 14 0    // 11
-								 &gpio 2 0    // 12
+								 &gpio 4 0    // 12
                                  &gpio 17 0    // 13
                                  &gpio 27 0    // 14
                                  &gpio 22 0    // 15
@@ -50,7 +50,7 @@
                                  &gpio 5 0    // 19
                                  &gpio 19 0    // 20
                                  &gpio 13 0    // 21
-                                 &gpio 3 0    // 22
+                                 &gpio 6 0    // 22
                                  &gpio 26 0>;  // 23
                     /*
                       Keycodes from /usr/include/linux/input-event-codes.h
