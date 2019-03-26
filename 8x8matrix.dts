@@ -7,7 +7,7 @@
                 target = <&gpio>;
                 __overlay__ {
                         keypad_pins: keypad_pins {
-                                brcm,pins = < 13 23 18 14 15 4 10 27 25 20 24 21 7 16 12 8 >;
+                                brcm,pins = < 21 20 16 12 7 8 25 24 23 18 15 14 4 17 27 22 >;
                                 brcm,function = <0>; // input
                                 brcm,pull = <1>; // 0=off, 1=down, 2=up
                         };
@@ -41,7 +41,7 @@
                                  &gpio 15 0    // 11
                                  &gpio 14 0    // 12
 				                 &gpio 4 0    // 13
-                                 gpio 17 0    // 14
+                                 &gpio 17 0    // 14
                                  &gpio 27 0    // 16
                                  &gpio 22 0>;    // 22
                     /*
