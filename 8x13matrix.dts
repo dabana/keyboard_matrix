@@ -86,7 +86,7 @@
                                     // row6 col1 KEY_GRAVE
 									0x06010029
                                     // row7 col1 KEY_1
-									0x07010002      
+									0x07010002   
                                     // row0 col2 KEY_W
 									0x00020011
                                     // row1 col2 KEY_CAPSLOCK
@@ -150,7 +150,7 @@
                                     // row6 col5 KEY_6
 									0x06050007
                                     // row7 col5 KEY_7
-									0x07050008      
+									0x07050008   
                                     // row0 col6 KEY_I
 									0x00060017
                                     // row1 col6 KEY_RIGHTBRACE
@@ -167,7 +167,6 @@
 									0x0606000d
                                     // row7 col6 KEY_8
 									0x07060009
-
                                     // row0 col8 KEY_P
 									0x00080019
                                     // row1 col8 KEY_LEFTBRACE
@@ -199,8 +198,7 @@
                                     // row6 col9 KEY_RESERVED
 									0x06090000
                                     // row7 col9 KEY_RESERVED
-									0x07090000      
-                                    
+									0x07090000                                          
                                     // row1 col11 KEY_RESERVED
 									0x010b0000                                   
                                     // row2 col11 KEY_RESERVED
@@ -246,7 +244,7 @@
                                     // row6 col13 KEY_RESERVED
 									0x060d0000
                                     // row7 col13 KEY_RESERVED
-									0x070d0000      
+									0x070d0000   
                                     // row0 col14 KEY_O
 									0x000e0018
                                     // row1 col14 KEY_RESERVED
