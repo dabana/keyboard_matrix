@@ -260,8 +260,7 @@
                                     // row6 col14 KEY_RESERVED
 									0x060e0000
                                     // row7 col14 KEY_9
-									0x070e000a
-                                   >;
+									0x070e000a>;
                  };
               };
            };
