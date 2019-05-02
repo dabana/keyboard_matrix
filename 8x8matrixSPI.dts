@@ -1,0 +1,191 @@
+    /dts-v1/;
+    /plugin/;
+    / {
+           compatible = "brcm,bcm2835", "brcm,bcm2708", "brcm,bcm2709";
+
+        fragment@1 {
+                target = <&gpio>;
+                __overlay__ {
+                        keypad_pins: keypad_pins {
+                                brcm,pins = < 23 18 15 14 4 17 27 22 >;
+                                brcm,function = <0>; // input
+                                brcm,pull = <1>; // 0=off, 1=down, 2=up
+                        };
+                };
+        };
+
+           fragment@0 {
+              target-path = "/";
+              __overlay__ {
+                 keypad: MATRIX8x8 {
+                    compatible = "gpio-matrix-keypad";
+                    pinctrl-names = "default";
+                    pinctrl-0 = <&keypad_pins>;
+                    debounce-delay-ms = <10>;
+                    col-scan-delay-us = <10>;
+                    /* 
+		       try to use GPIO only lines
+                       to keep SPI and I2C usable
+                    */
+                    row-gpios = <&gpio 21 0    // 0
+                                 &gpio 20 0      // 1
+                                 &gpio 16 0    // 2
+                                 &gpio 12 0     // 3
+				                 &gpio 2 0    // 4
+                                 &gpio 3 0    // 5
+                                 &gpio 25 0    // 6
+                                 &gpio 24 0>;   // 7
+
+                    col-gpios = <&gpio 23 0    // 9
+                                 &gpio 18 0    // 10
+                                 &gpio 15 0    // 11
+                                 &gpio 14 0    // 12
+				                 &gpio 4 0    // 13
+                                 &gpio 17 0    // 14
+                                 &gpio 27 0    // 16
+                                 &gpio 22 0>;    // 22
+                    /*
+                      Keycodes from /usr/include/linux/input-event-codes.h
+                      converted to hex using printf '%02x\n'
+                    */
+
+                    linux,keymap = <
+                                    // row0 col0 KEY_Q
+									0x00000010
+                                    // row1 col0 KEY_RIGHT
+									0x0100006a                                   
+                                    // row2 col0 KEY_A
+									0x0200001e
+                                    // row3 col0 KEY_RESERVED
+									0x03000000     
+                                    // row4 col0 KEY_Z
+									0x0400002c
+                                    // row5 col0 KEY_RESERVED
+									0x05000000                                   
+                                    // row6 col0 KEY_GRAVE
+									0x06000029
+                                    // row7 col0 KEY_1
+									0x07000002
+
+                                    // row0 col1 KEY_W
+									0x00010011
+                                    // row1 col1 KEY_CAPSLOCK
+									0x0101003a                                   
+                                    // row2 col1 KEY_S
+									0x0201001f
+                                    // row3 col1 KEY_BACKSLASH
+									0x0301002b     
+                                    // row4 col1 KEY_X
+									0x0401002d
+                                    // row5 col1 KEY_RESERVED
+									0x05010000                                   
+                                    // row6 col1 KEY_RESERVED
+									0x06010000
+                                    // row7 col1 KEY_2
+									0x07010003
+
+                                    // row0 col2 KEY_E
+									0x00020012
+                                    // row1 col2 KEY_GRAVE
+									0x01020029                                   
+                                    // row2 col2 KEY_D
+									0x02020020
+                                    // row3 col2 KEY_3
+									0x03020004     
+                                    // row4 col2 KEY_C
+									0x0402002e
+                                    // row5 col2 KEY_RESERVED
+									0x05020000                                   
+                                    // row6 col2 KEY_RESERVED
+									0x06020000
+                                    // row7 col2 KEY_3
+									0x07020004
+
+                                    // row0 col3 KEY_R
+									0x00030013
+                                    // row1 col3 KEY_T
+									0x01030014                                   
+                                    // row2 col3 KEY_F
+									0x02030021
+                                    // row3 col3 KEY_G
+									0x03030022     
+                                    // row4 col3 KEY_V
+									0x0403002f
+                                    // row5 col3 KEY_B
+									0x05030030                                   
+                                    // row6 col3 KEY_5
+									0x06030006
+                                    // row7 col3 KEY_4
+									0x07030004
+
+                                    // row0 col4 KEY_U
+									0x00040016
+                                    // row1 col4 KEY_Y
+									0x01040015                                   
+                                    // row2 col4 KEY_J
+									0x02040024
+                                    // row3 col4 KEY_H
+									0x03040023     
+                                    // row4 col4 KEY_M
+									0x04040032
+                                    // row5 col4 KEY_N
+									0x05040031                                   
+                                    // row6 col4 KEY_6
+									0x06040007
+                                    // row7 col4 KEY_7
+									0x07040008
+                                     
+                                    // row0 col5 KEY_I
+									0x00050017
+                                    // row1 col5 KEY_RIGHTBRACE
+									0x0105001b                                   
+                                    // row2 col5 KEY_K
+									0x02050025
+                                    // row3 col5 KEY_LEFTALT
+									0x03050038     
+                                    // row4 col5 KEY_COMMA
+									0x04050033
+                                    // row5 col5 KEY_RESERVED
+									0x05050000                                   
+                                    // row6 col5 KEY_EQUAL
+									0x0605000d
+                                    // row7 col5 KEY_8
+									0x07050009
+
+                                    // row0 col6 KEY_P
+									0x00060019
+                                    // row1 col6 KEY_LEFTBRACE
+									0x0106001a                                   
+                                    // row2 col6 KEY_SEMICOLON
+									0x02060027
+                                    // row3 col6 KEY_APOSTROPHE
+									0x03060028     
+                                    // row4 col6 KEY_RESERVED
+									0x04060000
+                                    // row5 col6 KEY_RESERVED
+									0x05060000                                   
+                                    // row6 col6 KEY_MINUS
+									0x0606000c
+                                    // row0 col7 KEY_O
+									0x0706000b
+
+                                    // row0 col7 KEY_o
+                                    0x00070018
+                                    // row1 col7 KEY_RESERVED
+									0x01070000                                   
+                                    // row2 col7 KEY_L
+									0x02070026
+                                    // row3 col7 KEY_RESERVED
+									0x03070000     
+                                    // row4 col7 KEY_DOT
+									0x04070034
+                                    // row5 col7 KEY_RESERVED
+									0x05070000                                   
+                                    // row6 col7 KEY_RESERVED
+									0x06070000
+                                    // row7 col7 KEY_9
+									0x0707000a>;
+                 };
+              };
+           };
+      };
