@@ -175,106 +175,106 @@
 									0x07060009
 
                                     // row0 col8 KEY_P
-									0x00080019
+									0x00070019
                                     // row1 col8 KEY_LEFTBRACE
-									0x0108001a                                   
+									0x0107001a                                   
                                     // row2 col8 KEY_SEMICOLON
-									0x02080027
+									0x02070027
                                     // row3 col8 KEY_APOSTROPHE
-									0x03080028     
+									0x03070028     
                                     // row4 col8 KEY_RESERVED
-									0x04080000
+									0x04070000
                                     // row5 col8 KEY_RESERVED
-									0x05080000                                   
+									0x05070000                                   
                                     // row6 col8 KEY_MINUS
-									0x0608000c
+									0x0607000c
                                     // row7 col8 KEY_0
-									0x0708000b
+									0x0707000b
 
                                     // row0 col9 KEY_RESERVED
-									0x00090000
+									0x00080000
                                     // row1 col9 KEY_BACKSPACE
-									0x0109000e                                   
+									0x0108000e                                   
                                     // row2 col9 KEY_BACKSLASH
-									0x0209002b
+									0x0208002b
                                     // row3 col9 KEY_RESERVED
-									0x03090000     
+									0x03080000     
                                     // row4 col9 KEY_ENTER
-									0x0409001c
+									0x0408001c
                                     // row5 col9 KEY_RESERVED
-									0x05090000                                   
+									0x05080000                                   
                                     // row6 col9 KEY_RESERVED
-									0x06090000
+									0x06080000
                                     // row7 col9 KEY_RESERVED
-									0x07090000
+									0x07080000
 
                                     // row0 col11 KEY_RESERVED
-									0x000b0000 
+									0x00090000 
                                     // row1 col11 KEY_RESERVED
-									0x010b0000                                   
+									0x01090000                                   
                                     // row2 col11 KEY_RESERVED
-									0x020b0000
+									0x02090000
                                     // row3 col11 KEY_SPACE
-									0x030b0039     
+									0x03090039     
                                     // row4 col11 KEY_RESERVED
-									0x040b0000
+									0x04090000
                                     // row5 col11 KEY_DOWN
-									0x050b006e                                   
+									0x0509006e                                   
                                     // row6 col11 KEY_DELETE
-									0x060b006f
+									0x0609006f
                                     // row7 col11 KEY_RESERVED
-									0x070b0000
+									0x07090000
 
                                     // row0 col12 KEY_RESERVED
-									0x000c0000
+									0x000a0000
                                     // row1 col12 KEY_RESERVED
-									0x010c0000                                   
+									0x010a0000                                   
                                     // row2 col12 KEY_RESERVED
-									0x020c0000
+									0x020a0000
                                     // row3 col12 KEY_RESERVED
-									0x030c0000     
+									0x030a0000     
                                     // row4 col12 KEY_RESERVED
-									0x040c0000
+									0x040a0000
                                     // row5 col12 KEY_LEFT
-									0x050c0069                                   
+									0x050a0069                                   
                                     // row6 col12 KEY_RESERVED
-									0x060c0000
+									0x060a0000
                                     // row7 col12 KEY_RESERVED
-									0x070c0000
+									0x070a0000
 
                                     // row0 col13 KEY_RESERVED
-									0x000d0000
+                                    0x000b0000
                                     // row1 col13 KEY_RESERVED
-									0x010d0000                                   
+									0x010b0000                                   
                                     // row2 col13 KEY_RESERVED
-									0x020d0000
+									0x020b0000
                                     // row3 col13 KEY_UP
-									0x030d0067     
+									0x030b0067     
                                     // row4 col13 KEY_RESERVED
-									0x040d0000
+									0x040b0000
                                     // row5 col13 KEY_RIGHT
-									0x050d006a                                   
+									0x050b006a                                   
                                     // row6 col13 KEY_RESERVED
-									0x060d0000
+									0x060b0000
                                     // row7 col13 KEY_RESERVED
-									0x070d0000
+									0x070b0000
 
                                     // row0 col14 KEY_O
-									0x000e0018
+									0x000c0018
                                     // row1 col14 KEY_RESERVED
-									0x010e0000                                   
+									0x010c0000                                   
                                     // row2 col14 KEY_L
-									0x020e0026
+									0x020c0026
                                     // row3 col14 KEY_RESERVED
-									0x030e0000     
+									0x030c0000     
                                     // row4 col14 KEY_DOT
-									0x040e0034
+									0x040c0034
                                     // row5 col14 KEY_RESERVED
-									0x050e0000                                   
+									0x050c0000                                   
                                     // row6 col14 KEY_RESERVED
-									0x060e0000
+									0x060c0000
                                     // row7 col14 KEY_9
-									0x070e000a>;
+									0x070c000a>;
                  };
               };
            };
