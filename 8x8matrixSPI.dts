@@ -17,7 +17,7 @@
            fragment@0 {
               target-path = "/";
               __overlay__ {
-                 keypad: MATRIX8x8 {
+                 keypad: MATRIX8x8SPI {
                     compatible = "gpio-matrix-keypad";
                     pinctrl-names = "default";
                     pinctrl-0 = <&keypad_pins>;
